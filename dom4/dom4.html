@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="language">
+        <li>Java Script</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(languages){
+        const li = document.createElement('li');
+        li.innerHTML = `${languages}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    function difftype(language){
+        const li = document.createElement('li'); 
+        li.appendChild(document.createTextNode(language));
+        li.style.color = 'red';
+            document.querySelector('.language').appendChild(li);
+    }
+    
+    addLanguage('Python');
+    difftype('Java');
+    difftype('Java');
+    difftype('Java');
+</script>
+</html>
