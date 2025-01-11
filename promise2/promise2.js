@@ -16,6 +16,8 @@ console.log('start');
         await fun();
         await fun();
         await fun();
+        console.log("await");
+        
     }
 
     getAllData();
